@@ -38,7 +38,7 @@ const cards=[
 
                 ))
 
-            }
+            } 
             
             </div>
         </div>

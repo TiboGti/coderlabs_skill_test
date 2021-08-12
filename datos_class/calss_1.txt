@@ -1,0 +1,6 @@
+react_1
+
+implementacion de 2 componentes  para pimera fase de pagina
+implementacion de boostrap para maquetamiento rapido 
+implementacion de los props para dinamizar la inyeccion de informacion a las tarjetas y minimizar y optimzar el codigo
+la pagina es responsiva aunque esta falta de detalles
