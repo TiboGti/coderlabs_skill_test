@@ -13,6 +13,7 @@
 body {
     font-family: 'Lato', 'Helvetica Neue', sans-serif;
     background-color: #F4F4F7;
+    
   }
 
   h1 {
@@ -22,7 +23,7 @@ body {
 .App-contenedor{
     background: rgb(131,58,180);
 background: linear-gradient(6deg, rgba(131,58,180,1) 30%, rgba(253,29,29,1) 49%, rgba(252,176,69,1) 99%);
-    height: 100vh;
+    height: 100%;
 }
 
 a.link-unstyled {

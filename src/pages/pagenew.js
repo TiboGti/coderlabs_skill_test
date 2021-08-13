@@ -9,9 +9,9 @@ import Form from '../components/form'
     return (
         <div>
             <Navbar/>
-            <div className="BadgeNew__hero">
-          <img className=" img-hero" src={Hero} alt="Logo" />
-        </div>
+              <div className="BadgeNew__hero">
+               <img className=" img-hero" src={Hero} alt="Logo" />
+              </div>
 
         <div className="container">
           <div className="row">
@@ -29,7 +29,11 @@ import Form from '../components/form'
 
           </div>
         </div>
-      </div>
+        <footer>
+          
+        </footer>
+
+      </  div>
     )
 }
 

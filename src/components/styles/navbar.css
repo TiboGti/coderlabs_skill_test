@@ -6,6 +6,7 @@
   
   .Navbar__brand {
     color: #ffffff;
+    text-decoration: none;
   
     display: flex;
     align-items: center;
@@ -18,4 +19,5 @@
   
   .Navbar__brand-logo {
     margin-right: 0.5rem;
+    width: 3rem;
   }
