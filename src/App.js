@@ -10,7 +10,6 @@ import './App.css'
      
      <Page/>
       
-    
     </div>
   )
 }

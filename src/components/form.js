@@ -1,12 +1,16 @@
 import React from 'react';
+import './styles/form.css'
 
 class Form extends React.Component {
-  handleChange = e => {
-    console.log({
-      name: e.target.name,
-      value: e.target.value,
-    });
-  };
+  state={};
+
+  /* handleChange = e => {
+    /
+
+    this.setState({
+      [e.target.name]: e.target.value
+    })
+  }; */
 
   handleClick = e => {
     console.log('Button was clicked');
@@ -15,11 +19,12 @@ class Form extends React.Component {
   handleSubmit = e => {
     e.preventDefault();
     console.log('Form was submitted');
+    console.log(this.state);
   };
 
   render() {
     return (
-      <div className="container">
+      <div className="container forms shadow-lg">
           <div className="container">
 
         <h1 className="text-center">New Attendant</h1>
@@ -29,19 +34,21 @@ class Form extends React.Component {
           <div className=" col-md-6 mb-3">
             <label>First Name</label>
             <input
-              onChange={this.handleChange}
+              onChange={this.props.onChange}
               className="form-control"
               type="text"
               name="firstName"
+              value={this.props.formValues.fristName}
               />
           </div>
           <div className=" col-md-6 mb-3">
             <label>Last Name</label>
             <input
-              onChange={this.handleChange}
+              onChange={this.props.onChange}
               className="form-control"
               type="text"
               name="lastName"
+              value={this.props.formValues.lastName}
               />
           </div>
               </div>
@@ -49,10 +56,11 @@ class Form extends React.Component {
           <div className="mb-3">
             <label>Email</label>
             <input
-              onChange={this.handleChange}
+              onChange={this.props.onChange}
               className="form-control"
               type="Email"
-              name="Email"
+              name="email"
+              value={this.props.formValues.email}
               />
           </div>
              <div className="row">
@@ -60,20 +68,22 @@ class Form extends React.Component {
           <div className="mb-3 col-md-6">
             <label>Job Title</label>
             <input
-              onChange={this.handleChange}
+              onChange={this.props.onChange}
               className="form-control"
               type="text"
-              name="JobTitle"
+              name="jobTitle"
+              value={this.props.formValues.jobTitle}
               />
           </div>
 
           <div className="mb-3 col-md-6">
             <label>Twitter</label>
             <input
-              onChange={this.handleChange}
+              onChange={this.props.onChange}
               className="form-control"
               type="text"
-              name="Twitter"
+              name="twitter"
+              value={this.props.formValues.twitter}
               />
           </div>
               </div>

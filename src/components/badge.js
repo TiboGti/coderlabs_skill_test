@@ -1,6 +1,6 @@
 import React from 'react'
 import './styles/badge.css'
-import  logo from '../assets/img_1.png'
+import  logo from '../assets/code.png'
 
  class Badge extends React.Component{
      render(){
@@ -17,14 +17,14 @@ import  logo from '../assets/img_1.png'
                 alt="Avatar"
               />
               <h1>
-                Jose <br /> Perez
-              </h1>
+            {this.props.firstName} <br /> {this.props.lastName}
+          </h1>
             </div>
     
             <div className="Badge__section-info">
-              <h3>Frontend Developer</h3>
-              <div>@Tiibo</div>
-            </div>
+          <h3>{this.props.jobTitle}</h3>
+          <div>@{this.props.twitter}</div>
+        </div>
     
             <div className="Badge__footer">#CoderLabs</div>
           </div>

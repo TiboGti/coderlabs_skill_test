@@ -5,9 +5,37 @@ import Badge from '../components/badge'
 import  Hero from '../assets/hero.jpg'
 import Form from '../components/form'
 
- function pagenew() {
+
+
+class pagenew extends React.Component {
+  
+  state = {
+    form: {
+      firstName: ' ',
+      lastName: ' ',
+      email: ' ',
+      jobTitle: ' ',
+      twitter: ' ',
+
+  },
+};
+
+
+
+
+  handleChange = e =>{
+    this.setState({
+
+      form:{
+        ...this.state.form,
+        [e.target.name]: e.target.value,
+      }
+    })
+  };
+
+  render() {
     return (
-        <div>
+        <div className="pages_container">
             <Navbar/>
               <div className="BadgeNew__hero">
                <img className=" img-hero" src={Hero} alt="Logo" />
@@ -17,13 +45,18 @@ import Form from '../components/form'
           <div className="row">
             <div className="col-md-6">
               <Badge
+                firstName={this.state.form.firstName}
+                lastName={this.state.form.lastName}
+                twitter={this.state.form.twitter}
+                jobTitle={this.state.form.jobTitle}
+                email={this.state.form.email}
                 
               />
             </div>
 
             <div className="col-md-6">
 
-              <Form/>
+              <Form  onChange={this.handleChange}  formValues={this.state.form}/>
 
             </div>
 
@@ -35,6 +68,7 @@ import Form from '../components/form'
 
       </  div>
     )
+  }
 }
 
-export default pagenew
+export default pagenew;
