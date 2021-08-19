@@ -1,19 +1,46 @@
-import React from 'react'
-import Logo from '../assets/code.png'
+import React, { useState } from 'react';
+import * as FaIcons from 'react-icons/fa';
+import * as AiIcons from 'react-icons/ai';
+import { Link } from 'react-router-dom';
+import { SidebarData } from './SidebarData';
+import './styles/navbar.css';
+import { IconContext } from 'react-icons';
 
-import  './styles/navbar.css'
+function Navbar() {
+  const [sidebar, setSidebar] = useState(false);
 
+  const showSidebar = () => setSidebar(!sidebar);
 
-export default function navbar() {
-    return (
-        <nav className="Navbar ">
-        <div className="container-fluid">
-          <a className="Navbar__brand " href="/">
-            <img className="Navbar__brand-logo" src={Logo} alt="Logo" />
-            <span className=" bd-highlight">#CoderLabs</span>
-            <span className="bd-highlight"></span>
-          </a>
+  return (
+    <div>
+      <IconContext.Provider value={{ color: '#fff' }}>
+        <div className='navbar__'>
+          <Link to='#' className='menu-bars'>
+            <FaIcons.FaBars onClick={showSidebar} />
+          </Link>
         </div>
-      </nav>
-    )
+        <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
+          <ul className='nav-menu-items' onClick={showSidebar}>
+            <li className='navbar-toggle'>
+              <Link to='#' className='menu-bars'>
+                <AiIcons.AiOutlineClose />
+              </Link>
+            </li>
+            {SidebarData.map((item, index) => {
+              return (
+                <li key={index} className={item.cName}>
+                  <Link to={item.path}>
+                    {item.icon}
+                    <span>{item.title}</span>
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
+      </IconContext.Provider>
+    </div>
+  );
 }
+
+export default Navbar;

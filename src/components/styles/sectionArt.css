@@ -1,0 +1,41 @@
+.sec__header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.sec__header h1{
+    margin: 2rem;
+    font-weight: 700;
+    color:#0b0b60;
+
+}
+
+.sec__header p{
+    font-size: 1.2rem;
+    text-align: center;
+    color: darkgray;
+}
+
+.sec__title{
+    font-size: 2rem;
+    font-weight: 650;
+    color:#0b0b60;
+}
+
+.sec__par {
+    font-size: 1.3rem;
+}
+
+.text__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img__content img{
+    padding: 0 1rem;
+    width: 82%;
+   
+}

@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from './card'
-import './cards.css'
+import './styles/cards.css'
 import img1 from '../assets/img_1.png'
 import img2 from '../assets/img_2.png'
 import img3 from '../assets/img_3.png'

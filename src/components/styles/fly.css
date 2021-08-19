@@ -1,0 +1,28 @@
+.content-fly{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.fly{
+    display: flex;
+    width: 23%;
+    min-width: 13.3rem;
+    margin: 2rem;
+    background:#fff;
+    height: 5rem;
+    padding-left: 1.2rem;
+    align-items: center;
+    border-radius: 1rem;
+
+}
+
+.fly h5{
+    margin: 0.2rem;
+}
+
+
+
+.img__icon{
+    width: 1.7rem;
+}

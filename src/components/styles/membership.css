@@ -1,0 +1,45 @@
+.content__header_mem h1{
+    font-weight: 700;
+    color: #0b0b60;
+}
+
+.content__header_mem p {
+    font-size: 1.2rem;
+    
+    color: darkgray;
+}
+.img__box{
+    width: 100%;
+    min-height: 13rem;
+    padding-bottom: 1.1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+
+
+.card__box_men{
+    width: 28%;
+    min-width: 320px;
+    padding: 1rem;
+    margin:  1rem;
+    min-height: 25rem;
+    border-radius: 1rem;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card__body_men h3 {
+
+    color: #0b0b60;
+    
+    font-weight: 700;
+
+}
+.card__body_men p {
+    color: darkgray;
+    font-size: 1.3rem;
+}

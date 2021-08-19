@@ -1,6 +1,6 @@
 import React from 'react'
 import './styles/pagenew.css'
-import Navbar from '../components/navbar' 
+
 import Badge from '../components/badge' 
 import  Hero from '../assets/hero.jpg'
 import Form from '../components/form'
@@ -36,7 +36,7 @@ class pagenew extends React.Component {
   render() {
     return (
         <div className="pages_container">
-            <Navbar/>
+            
               <div className="BadgeNew__hero">
                <img className=" img-hero" src={Hero} alt="Logo" />
               </div>
