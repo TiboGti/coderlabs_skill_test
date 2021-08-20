@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Home from './pages/home'
 import Page from './pages/pagenew'
 import './App.css'
 import Pagecard from './pages/pagecard'
@@ -12,12 +12,13 @@ import Navbar from './components/Navbar'
   return (
     <div className="App-contenedor">
 
+      {
       <BrowserRouter>
       <Navbar/>
 
         <Switch>
 
-
+          <Route exact path="/" component={Home} />
           <Route exact path="/pages/cards" component={Pagecard}/>
           <Route exact path="/pages/page" component={Page}/>
           <Route exact path="/pages/page1" component={Page1}/>
@@ -26,7 +27,7 @@ import Navbar from './components/Navbar'
 
       
       </BrowserRouter>
-
+ }
     </div>
   )
 }

@@ -1,0 +1,42 @@
+.navb__cont{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 7rem;
+    margin-right: 5rem;
+}
+.navb__cont ul{
+    display: flex;
+    list-style: none;
+    
+    
+}
+
+.nav__item{
+    margin-left: 2.5rem;
+}
+.nav__item a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: lightslategrey;
+}
+.btn-go {
+
+    display: inline-block;
+    line-height: 1.9;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .390rem .85rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: .25rem;
+    background-color: #0b0b60;
+    margin-top: -5px;
+    position: relative;
+}
