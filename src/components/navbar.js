@@ -12,7 +12,7 @@ function Navbar() {
   const showSidebar = () => setSidebar(!sidebar);
 
   return (
-    <div>
+    <React.Fragment>
       <IconContext.Provider value={{ color: '#fff' }}>
         <div className='navbar__'>
           <Link to='#' className='menu-bars'>
@@ -39,7 +39,7 @@ function Navbar() {
           </ul>
         </nav>
       </IconContext.Provider>
-    </div>
+    </React.Fragment>
   );
 }
 

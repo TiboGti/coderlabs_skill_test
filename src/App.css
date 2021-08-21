@@ -88,3 +88,37 @@ a.link-unstyled {
     box-shadow: 0 0 0 0.2rem rgba(255, 64, 64, 0.5);
   }
 
+  .Notfound{
+    height:auto ;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.Notfound img{
+  
+  width: 50%;
+height: auto;
+
+  background-size:cover;
+  
+ 
+}
+
+@media  screen and (max-width:990px) {
+  .Notfound{
+    height: 90vh;
+  }
+  .Notfound img{
+  
+    width: 100%;
+  height: auto;
+  
+    
+    
+   
+  }
+
+}
