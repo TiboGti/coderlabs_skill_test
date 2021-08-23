@@ -9,12 +9,13 @@ import { BrowserRouter,Route, Switch } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Layout from './components/Layout'
 import NotFound from './pages/NotFound'
+import Pagerym from './pages/pagerym'
 
  const App= () =>  {
   return (
     <div className="App-contenedor">
 
-      {
+      
 
         
         <BrowserRouter>
@@ -24,8 +25,9 @@ import NotFound from './pages/NotFound'
         <Switch>
 
           <Route exact path="/" component={Home} />
-          <Route exact path="/pages/cards" component={Pagecard}/>
-          <Route exact path="/pages/page" component={Page}/>
+          <Route exact path="/pages/cards" component={Pagerym}/>
+          <Route exact path="/pages/page" component={Pagerym}/>
+          <Route exact path="/pages/ca" component={Pagecard}/>
           <Route component={NotFound}/>
 
         </Switch>
@@ -35,7 +37,7 @@ import NotFound from './pages/NotFound'
       </BrowserRouter>
 
 
- }
+ 
     </div>
   )
 }

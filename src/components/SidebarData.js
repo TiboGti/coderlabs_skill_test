@@ -12,7 +12,7 @@ export const SidebarData = [
     cName: 'nav-text'
   },
   {
-    title: 'Cards',
+    title: 'Ryck and Morty',
     path: '/pages/cards',
     icon: <IoIcons.IoIosPaper />,
     cName: 'nav-text'
@@ -29,5 +29,11 @@ export const SidebarData = [
     path: '/page/page1',
     icon: <FaIcons.FaEnvelopeOpenText />,
     cName: 'nav-text'
-  }
+  },
+  {
+    title: 'Cards',
+    path: '/pages/ca',
+    icon: <IoIcons.IoIosPaper />,
+    cName: 'nav-text'
+  },
 ];
