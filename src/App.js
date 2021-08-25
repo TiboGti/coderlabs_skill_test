@@ -1,12 +1,12 @@
 import React from 'react'
 import Home from './pages/home'
-import Page from './pages/pagenew'
+
 import './App.css'
 import Pagecard from './pages/pagecard'
 
 import { BrowserRouter,Route, Switch } from 'react-router-dom'
 
-import Navbar from './components/Navbar'
+
 import Layout from './components/Layout'
 import NotFound from './pages/NotFound'
 import Pagerym from './pages/pagerym'
