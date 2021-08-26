@@ -1,4 +1,4 @@
-import React from 'react'
+/* import React from 'react'
 import './styles/charactercard.css'
 
 const CharacterCard = () => {
@@ -15,3 +15,4 @@ const CharacterCard = () => {
 }
 
 export default CharacterCard
+ */

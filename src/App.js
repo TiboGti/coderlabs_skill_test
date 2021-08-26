@@ -3,7 +3,7 @@ import Home from './pages/home'
 
 import './App.css'
 import Pagecard from './pages/pagecard'
-
+import Badges from './pages/Badges'
 import { BrowserRouter,Route, Switch } from 'react-router-dom'
 
 
@@ -26,6 +26,7 @@ import Pagerym from './pages/pagerym'
 
           <Route exact path="/" component={Home} />
           <Route exact path="/pages/cards" component={Pagerym}/>
+          <Route exact path="/pages/cards" component={Badges}/>
           <Route exact path="/pages/page" component={Pagerym}/>
           <Route exact path="/pages/ca" component={Pagecard}/>
           <Route component={NotFound}/>
