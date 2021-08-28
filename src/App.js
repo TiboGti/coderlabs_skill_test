@@ -25,10 +25,11 @@ import Pagerym from './pages/pagerym'
         <Switch>
 
           <Route exact path="/" component={Home} />
-          <Route exact path="/pages/cards" component={Pagerym}/>
           <Route exact path="/pages/cards" component={Badges}/>
+          <Route exact path="/pages/badges" component={Badges}/>
           <Route exact path="/pages/page" component={Pagerym}/>
           <Route exact path="/pages/ca" component={Pagecard}/>
+          
           <Route component={NotFound}/>
 
         </Switch>

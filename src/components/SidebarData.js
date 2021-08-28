@@ -31,6 +31,12 @@ export const SidebarData = [
     cName: 'nav-text'
   },
   {
+    title: 'Badges',
+    path: '/page/badges',
+    icon: <FaIcons.FaEnvelopeOpenText />,
+    cName: 'nav-text'
+  },
+  {
     title: 'Cards',
     path: '/pages/ca',
     icon: <IoIcons.IoIosPaper />,

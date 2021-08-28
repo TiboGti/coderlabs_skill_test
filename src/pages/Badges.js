@@ -4,6 +4,8 @@ import BadgesList from '../components/BadgesList';
 import api from '../services/api';
 
 import './styles/badges.css'
+import Loader from '../components/loader';
+import PageError from '../components/pageError';
 
 
 
@@ -33,11 +35,11 @@ class Badges extends React.Component {
   
     render() {
       if (this.state.loading === true) {
-        return 'Loading...';
+        return <Loader/>;
       }
   
       if (this.state.error) {
-        return `Error: ${this.state.error.message}`;
+        return <PageError/>;
       }
   
       return (
