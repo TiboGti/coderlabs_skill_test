@@ -1,0 +1,20 @@
+import React from 'react';
+import Md5 from 'md5';
+
+
+
+function Gravatar(props) {
+    const email = props.email;
+    const hash = Md5(email);
+
+    return(
+
+        <img
+                className={props.className}
+                src={`https://s.gravatar.com/avatar/${hash}?s=80`}     alt="Avatar"
+        />
+    )
+    
+}
+
+export default Gravatar;
