@@ -8,7 +8,7 @@ import api from '../services/api'
 
 
 
-class pagenew extends React.Component {
+class pagenewedit extends React.Component {
   
   state = {
     loading: false,
@@ -22,6 +22,21 @@ class pagenew extends React.Component {
     },
   };
 
+  componentDidMount() {
+    this.fetchData();
+  }
+
+  fetchData = async e => {
+    this.setState({ loading: true, error: null });
+
+    try {
+      const data = await api.badges.read(this.props.match.params.badgeId);
+
+      this.setState({ loading: false, form: data });
+    } catch (error) {
+      this.setState({ loading: false, error: error });
+    }
+  };
 
 
 
@@ -84,4 +99,4 @@ class pagenew extends React.Component {
   }
 }
 
-export default pagenew;
+export default pagenewedit;
