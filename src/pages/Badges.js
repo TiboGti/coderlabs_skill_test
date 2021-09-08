@@ -2,10 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import BadgesList from '../components/BadgesList';
 import api from '../services/api';
-
 import './styles/badges.css'
 import Loader from '../components/loader';
 import PageError from '../components/pageError';
+import MiniLoader from '../components/MiniLoader';
 
 
 
@@ -20,6 +20,12 @@ class Badges extends React.Component {
   
     componentDidMount() {
       this.fetchData();
+  
+      this.intervalId = setInterval(this.fetchData, 5000);
+    }
+  
+    componentWillUnmount() {
+      clearInterval(this.intervalId);
     }
   
     fetchData = async () => {
@@ -64,6 +70,7 @@ class Badges extends React.Component {
             </div>
   
             <BadgesList badges={this.state.data} />
+            {this.state.loading && <MiniLoader />}
           </div>
         </React.Fragment>
       );
