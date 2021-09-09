@@ -1,6 +1,5 @@
 import React from 'react'
 import './styles/pagenew.css'
-
 import Badge from '../components/badge' 
 import  Hero from '../assets/hero.jpg'
 import Form from '../components/form'

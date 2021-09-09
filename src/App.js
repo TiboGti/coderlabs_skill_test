@@ -9,6 +9,7 @@ import NotFound from './pages/NotFound'
 import Pagerym from './pages/pagerym'
 import Pagenew from './pages/pagenew'
 import Pageedit from './pages/pagenewedit'
+import BadgeDetails from './pages/BadgeDtails'
 
 
  const App= () =>  {
@@ -28,6 +29,7 @@ import Pageedit from './pages/pagenewedit'
           <Route exact path="/pages/cards" component={Badges}/>
           <Route exact path="/pages/badges" component={Badges}/>
           <Route exact path="/pages/new" component={Pagenew}/>
+          <Route exact path="/pages/:bagedId" component={BadgeDetails}/>
           <Route exact path="/pages/:bagedId/edit" component={Pageedit}/>
           <Route exact path="/pages/page" component={Pagerym}/>
           <Route exact path="/pages/ca" component={Pagecard}/>
